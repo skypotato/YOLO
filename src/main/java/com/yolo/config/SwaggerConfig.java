@@ -25,7 +25,7 @@ public class SwaggerConfig {
 					.paths(PathSelectors.any())
 					.build()
 				.apiInfo(apiInfo())
-				.tags(new Tag("YOLO","yolo"));
+				.tags(new Tag("UserApi","유저 관련 API"));
 	}
 	
 	private ApiInfo apiInfo() {

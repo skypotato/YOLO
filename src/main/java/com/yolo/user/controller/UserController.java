@@ -14,7 +14,11 @@ import com.yolo.common.Response;
 import com.yolo.user.domain.User;
 import com.yolo.user.service.UserService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 @Controller("/api")
+@Api(tags = "UserApi")
 public class UserController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
@@ -28,6 +32,7 @@ public class UserController {
 	 */
 	@RequestMapping(value = "/user", method = RequestMethod.POST)
 	@ResponseBody
+	@ApiOperation("회원가입")
 	public Response userRegist(@RequestParam String userId, @RequestParam String password,
 			@RequestParam String tel, @RequestParam String email) {
 		
@@ -55,6 +60,7 @@ public class UserController {
 	 */
 	@RequestMapping(value = "/user/{userNo}", method = RequestMethod.GET)
 	@ResponseBody
+	@ApiOperation("유저 정보")
 	public Response userInfo(@PathVariable Integer userNo) {
 		Response response = new Response();
 		

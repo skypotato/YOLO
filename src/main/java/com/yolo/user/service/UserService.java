@@ -1,6 +1,7 @@
 package com.yolo.user.service;
 
 import com.yolo.user.domain.User;
+import com.yolo.user.domain.UserStatus;
 
 public interface UserService {
 
@@ -20,4 +21,15 @@ public interface UserService {
 	 * @return
 	 */
 	User userInfo(Integer userNo);
+	
+	/**
+	 * 유저 수정
+	 * @param userNo
+	 * @param password
+	 * @param tel
+	 * @param email
+	 * @param userstatus
+	 * @return
+	 */
+	User userUpdate(Integer userNo, String password, String tel, String email,UserStatus  userstatus);
 }

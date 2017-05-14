@@ -64,4 +64,24 @@ public class UserServiceImpl implements UserService{
 		
 		return user;
 	}
+	
+	/**
+	 * 유저 수정
+	 */
+	@Override
+	public User userUpdate(Integer userNo, String password, String tel, String email, UserStatus userstatus){
+		User user = new User();
+		
+		try{
+			user = userRepository.findOne(userNo);
+			user.setPassword(password);
+			user.setTel(tel);
+			user.setEmail(email);
+			user.setUserStatus(userstatus);
+			userRepository.save(user);
+		}catch (Exception e){
+			logger.error("### error",e);
+		}
+		return user;
+	}
 }

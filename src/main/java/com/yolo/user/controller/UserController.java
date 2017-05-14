@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.yolo.common.Response;
 import com.yolo.user.domain.User;
+import com.yolo.user.domain.UserStatus;
 import com.yolo.user.service.UserService;
 
 import io.swagger.annotations.Api;
@@ -84,4 +85,35 @@ public class UserController {
 		return response;
 	}
 	
+	/**
+	 * 유저수정
+	 * @return
+	 */
+	@RequestMapping(value = "/userUpdate", method = RequestMethod.POST)
+	@ResponseBody
+	@ApiOperation("유저수정")
+	public Response userUpdate(@RequestParam int userNo, @RequestParam String password,
+			@RequestParam String tel, @RequestParam String email,@RequestParam String status) {
+		
+		Response response = new Response();
+		try {
+			logger.debug("### userNo = {}, password = {}, tel = {}, email = {}",userNo,password,tel,email);
+			User user;
+			if(status.equals("ON") == true){
+				user = userService.userUpdate(userNo, password, tel, email,UserStatus.ON);
+			}else{
+				user = userService.userUpdate(userNo, password, tel, email,UserStatus.DD);
+			}
+
+			response.setStatus(Response.OK);
+			response.setMessage("OK");
+			response.setData(user);
+			
+		} catch (Exception e) {
+			logger.error("### error",e);
+			response.setStatus(Response.SERVER_ERROR);
+			response.setMessage("Error !");
+		}
+		return response;
+	}
 }

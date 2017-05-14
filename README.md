@@ -15,12 +15,11 @@
 - DB : Mysql 5.7
 - MAVEN : [3.3.9](http://maven.apache.org/download.cgi)
 - BackEnd : SpringBoot 1.5.4
-- FrontEnt : Angular2
 
 ## 주요 기능
 
 - 카카오톡 OAuth 로그인
-- 글쓰기
+- 글쓰기(smart editor 2.0사용)
 - 댓글작성
 - 이미지 저장
 - 공유(좋아요, 카카오톡 공유)

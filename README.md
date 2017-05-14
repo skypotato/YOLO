@@ -32,4 +32,4 @@
 
 ## ERD
 
-![ERD](./assets/erd.PNG)
+![ERD](https://github.com/HyeonJung/YOLO-DOC/blob/master/db/yolo-erd.PNG?raw=true)

@@ -89,10 +89,10 @@ public class UserController {
 	 * 유저수정
 	 * @return
 	 */
-	@RequestMapping(value = "/userUpdate", method = RequestMethod.POST)
+	@RequestMapping(value = "/user/{userNo}", method = RequestMethod.PUT)
 	@ResponseBody
 	@ApiOperation("유저수정")
-	public Response userUpdate(@RequestParam int userNo, @RequestParam String password,
+	public Response userUpdate(@PathVariable Integer userNo, @RequestParam String password,
 			@RequestParam String tel, @RequestParam String email,@RequestParam String status) {
 		
 		Response response = new Response();

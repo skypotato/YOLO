@@ -5,12 +5,14 @@
 
 ## What is YOLO?
 
+![YOLO](./assets/yolo.PNG)
+
 `인생은 한 번뿐이다`를 뜻하는 You Only Live Once의 앞 글자를 딴 용어로 현재 자신의 행복을 가장 중시하여 소비하는 태도를 말한다.
 
 이 프로젝트는 각자의 버킷리스트를 공유하여 자신만의 YOLO를 실현하는데 도움을 주는 커뮤니티 사이트이다.
 
 ## 문서
-- GitHub(YOLO-DOC) : (https://github.com/HyeonJung/YOLO-DOC)
+- [YOLO 산출물](https://github.com/HyeonJung/YOLO-DOC)
 ## 개발 환경
 
 - JDK : java 1.8
@@ -40,3 +42,4 @@
 
 ![Use Case Diagram(User)](https://github.com/HyeonJung/YOLO-DOC/blob/master/UseCaseDiagram/usd_1.png)
 ![Use Case Diagram(Admin)](https://github.com/HyeonJung/YOLO-DOC/blob/master/UseCaseDiagram/usd_2.png)
+

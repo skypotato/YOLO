@@ -9,6 +9,8 @@
 
 이 프로젝트는 각자의 버킷리스트를 공유하여 자신만의 YOLO를 실현하는데 도움을 주는 커뮤니티 사이트이다.
 
+## 문서
+- GitHub(YOLO-DOC) : (https://github.com/HyeonJung/YOLO-DOC)
 ## 개발 환경
 
 - JDK : java 1.8

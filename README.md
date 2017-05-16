@@ -38,5 +38,5 @@
 
 ## Use Case Diagram
 
-![Use Case Diagram(User)](https://github.com/HyeonJung/YOLO-DOC/blob/master/db/usd_1.png)
-![Use Case Diagram(Admin)](https://github.com/HyeonJung/YOLO-DOC/blob/master/db/usd_2.png)
+![Use Case Diagram(User)](https://github.com/HyeonJung/YOLO-DOC/blob/master/UseCaseDiagram/usd_1.png)
+![Use Case Diagram(Admin)](https://github.com/HyeonJung/YOLO-DOC/blob/master/UseCaseDiagram/usd_2.png)

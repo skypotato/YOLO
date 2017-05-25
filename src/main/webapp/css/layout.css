@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*
 Template Name: Prestige
 Author: <a href="http://www.os-templates.com/">OS Templates</a>
@@ -220,3 +220,183 @@ th{color:inherit; background-color:#000000;}
 tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{color:inherit; background-color:#434343;}
 tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#373737;}
 table a, #comments a{background-color:inherit;}
+
+
+
+.join_from .lbl {
+    font-size: 15px;
+    line-height: 18px;
+    position: absolute;
+    z-index: 9;
+    top: 5px;
+    left: 0;
+    display: block;
+    color: #999
+}
+
+.join_from .cell {
+    display: table-cell;
+    width: 5px;
+    padding-right: 10px;
+    text-indent: -999em;
+    background: url(https://static.nid.naver.com/images/join/pc/ico_join3_2x_20170202.png) -94px -575px no-repeat;
+    -webkit-background-size: 97px 900px;
+    background-size: 97px 900px;
+    *display: block;
+    *float: left;
+    *padding: 0
+}
+
+.join_row {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 11px 11px 11px 13px;
+    background: #fff;
+    *position: relative
+}
+
+    .join_row + .join_row {
+        border-top: solid 1px #f0f0f0
+    }
+
+    .join_row:first-child {
+        border-top: none
+    }
+
+    .join_row .int {
+        font-size: 15px;
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: 16px;
+        padding: 6px 0;
+        border: none;
+        background: #fff;
+        *position: absolute;
+        *top: 0;
+        *left: 0;
+        apperance: none;
+        -webkit-apperance: none
+    }
+
+.ipin_box, .row_group {
+    zoom: 1;
+    border: solid 1px #dadada;
+    background: #fff
+}
+
+.row_group {
+    font-size: 12px;
+    display: block;
+    margin: 15px 0 3px 1px;
+    color: red
+}
+
+.row_group .gm {
+    color: #2eaa08
+}
+
+.join_sex {
+    overflow: hidden;
+    padding: 8px 11px
+}
+
+.sex {
+    display: block;
+    float: none;
+    margin-right: 0;
+    height: 31px;
+    border: solid 1px #dcdcdc
+}
+
+ .sex .jender {
+    width: 49.8%
+}
+
+ .sex .jender input, .sex .jender label {
+        width: 100%
+    }
+
+.jender {
+    position: relative;
+    z-index: 10;
+    display: block;
+    float: left;
+    width: 44px;
+    height: 31px;
+    border-right: solid 1px #dcdcdc
+}
+
+    .jender + .jender {
+        border: none
+    }
+
+    .jender input {
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 44px;
+        height: 31px
+    }
+
+    .jender label {
+        line-height: 31px;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 44px;
+        height: 35px;
+        cursor: pointer;
+        text-align: center;
+        color: #999;
+        background: #fff
+    }
+
+    .jender input:checked + label {
+        z-index: 100;
+        margin: -1px;
+        color: #2eaa08;
+        border: solid 1px #2eaa08
+    }
+
+    .jender label.on {
+        z-index: 100;
+        margin: -1px;
+        color: #2eaa08;
+        border: solid 1px #2eaa08
+    }
+
+.row_title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 33px;
+    display: inline-block;
+    height: 33px;
+    margin-left: 2px;
+    color: #999
+}
+
+.join_minor .join_sex {
+    padding: 0 3px 0 0
+}
+
+    .join_minor .join_sex .sex {
+        margin-right: 0
+    }
+
+.join_minor .join_mobile .country_code {
+    left: 16px;
+    width: 110px
+}
+
+.join_minor .join_com .sex {
+    float: right;
+    margin-right: 4px
+}
+
+
+

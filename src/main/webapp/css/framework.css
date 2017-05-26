@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*
 Template Name: Prestige
 Author: <a href="http://www.os-templates.com/">OS Templates</a>
@@ -90,3 +90,99 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 .pad30{padding:30px;}
 .pad50{padding:50px;}
 .pad80{padding:80px;}
+
+/*
+    **************************************
+    ***********2017.05.23 로그인**********
+    ***************이대용*****************
+*/
+#loginheader {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 168px;
+    padding: 62px 0 0
+}
+
+.input_row {
+    position: relative;
+    height: 29px;
+    margin: 0 0 14px;
+    padding: 10px 35px 10px 15px;
+    border: solid 1px #dadada;
+    background: #fff
+}
+
+    .input_row.focus {
+        border: solid 1px #d82313
+    }
+
+.input_box {
+    display: block;
+    overflow: hidden
+}
+
+.int {
+    font-size: 15px;
+    line-height: 16px;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    height: 29px;
+    padding: 7px 0 6px;
+    color: #000;
+    border: none;
+    background: #fff;
+    -webkit-appearance: none
+}
+
+.lbl {
+    font-size: 15px;
+    line-height: 16px;
+    position: absolute;
+    z-index: 8;
+    top: 16px;
+    left: 15px;
+    color: #999
+}
+
+.ie7 .lbl, .ie8 .lbl, .ie9 .lbl {
+    z-index: 10
+}
+
+@media screen and (min-width:460px) {
+    #logincontent {
+        width: 460px;
+        margin: 0 auto
+    }
+}
+@media screen and (min-width:460px) {
+    #joincontent {
+        width: 460px;
+        margin: 0 auto
+    }
+}
+
+.btn_global {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 61px;
+    display: block;
+    width: 100%;
+    height: 61px;
+    margin: 30px 0 13px;
+    padding-top: 2px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    background-color: #666;
+    -webkit-appearance: none
+}
+
+    .btn_global:active, .btn_global:hover, .btn_global:link {
+        text-decoration: none;
+        color: #fff
+    }
+

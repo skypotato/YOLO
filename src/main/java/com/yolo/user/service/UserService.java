@@ -32,4 +32,11 @@ public interface UserService {
 	 * @return
 	 */
 	User userUpdate(Integer userNo, String password, String tel, String email,UserStatus  userstatus);
+	
+	/**
+	 * id로 유저 찾기
+	 * @param userId
+	 * @return
+	 */
+	User searchByUserId(String userId);
 }

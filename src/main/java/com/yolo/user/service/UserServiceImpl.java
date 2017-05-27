@@ -84,4 +84,16 @@ public class UserServiceImpl implements UserService{
 		}
 		return user;
 	}
+	
+	/**
+	 * 
+	 * 유저 아이디로 유저 찾기
+	 */
+	@Override
+	public User searchByUserId(String userId) {
+		
+		User user = userRepository.findByUserId(userId);
+		
+		return user;
+	}
 }

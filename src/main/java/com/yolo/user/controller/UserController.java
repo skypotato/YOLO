@@ -116,4 +116,35 @@ public class UserController {
 		}
 		return response;
 	}
+	
+	/**
+	 * 아이디로 찾기
+	 * @param userNo
+	 * @return
+	 */
+	@RequestMapping(value = "/user/id/{userId}", method = RequestMethod.GET)
+	@ResponseBody
+	@ApiOperation("유저 정보")
+	public Response userInfoById(@PathVariable String userId) {
+		Response response = new Response();
+		
+		try {
+			User user = userService.searchByUserId(userId);
+			
+			if (user != null) {
+				response.setStatus(Response.OK);
+				response.setMessage("OK");
+				response.setData(user);
+			} else {
+				response.setStatus(Response.WRONG_PARAMETER);
+				response.setMessage("존재하지 않는 유저입니다.");
+			}
+			
+		} catch (Exception e) {
+			logger.error("### error",e);
+			response.setStatus(Response.SERVER_ERROR);
+			response.setMessage("Error !");
+		}
+		return response;
+	}
 }

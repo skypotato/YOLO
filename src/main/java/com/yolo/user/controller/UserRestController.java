@@ -20,9 +20,9 @@ import io.swagger.annotations.ApiOperation;
 
 @Controller("/api")
 @Api(tags = "UserApi")
-public class UserController {
+public class UserRestController {
 	
-	private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+	private static final Logger logger = LoggerFactory.getLogger(UserRestController.class);
 	
 	@Autowired
 	UserService userService;

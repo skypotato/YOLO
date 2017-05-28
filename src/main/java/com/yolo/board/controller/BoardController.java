@@ -12,4 +12,10 @@ public class BoardController {
 		
 		return "/board/boardList";
 	}
+	
+	@RequestMapping("/write")
+	public String boardWrite() {
+		
+		return "/board/boardWrite";
+	}
 }
